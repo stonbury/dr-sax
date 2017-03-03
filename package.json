@@ -3,12 +3,7 @@
   "version": "1.0.14",
   "description": "An html to markdown converter for node that doesn't use jsdom",
   "main": "index.js",
-  "scripts": {
-    "test": "if [ ! -d test/Markdown_1.0.1 ]; then npm run install-gruber; fi; tap test/*js",
-    "download-gruber": "curl http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip -o test/Markdown_1.0.1.zip ",
-    "unzip-gruber": "cd test && unzip Markdown_1.0.1.zip",
-    "install-gruber": "if [ -z $NOGRUBER ]; then npm run download-gruber && npm run unzip-gruber; fi"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/toddself/dr-sax"
@@ -29,8 +24,7 @@
   },
   "homepage": "https://github.com/toddself/dr-sax",
   "dependencies": {
-    "htmlparser2": "~3.7.1",
-    "readable-stream": "~1.0.27-1"
+    "sax": "git+https://github.com/stonbury/sax-js.git"
   },
   "devDependencies": {
     "commonmark": "~0.21.0",
